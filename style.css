@@ -22,10 +22,15 @@ body{
         border-top:  3px solid black;
         border-bottom:  3px solid black;
     }
+        @font-face {
+            font-family: 'jujutsu';
+            src: url('Jujutsu Kaisen.ttf') format(truetype);
+            font-weight: normal;
+        }
         header h1{
             font-size: 35px;
             letter-spacing: 4px;
-            font-family: 'Jujutsu Kaisen';
+            font-family: 'jujutsu';
             text-align: center;
             text-shadow: 5px 5px 5px black;
             color: white;
@@ -52,7 +57,7 @@ body{
                 align-items: center;
             }
                 .fen #char-name{
-                    font-family: 'Jujutsu Kaisen';
+                    font-family: 'jujutsu';
                     font-size: 30px;
                     text-shadow: 3px 3px 3px black
                     
