@@ -1,108 +1,107 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Consolas';
-    background-color: #5f1c07;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Consolas";
+  background-color: #5f1c07;
 }
-    header {
-        background-color: #06696b;
-        min-height: 100px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top:  3px solid black;
-        border-bottom:  3px solid black;
-    }
-        @font-face {
-            font-family: 'jujutsu';
-            src: url('Jujutsu Kaisen.ttf') format(truetype);
-            font-weight: normal;
-        }
-        header h1{
-            font-size: 35px;
-            letter-spacing: 4px;
-            font-family: 'jujutsu';
-            text-align: center;
-            text-shadow: 5px 5px 5px black;
-            color: white;
-        }
-    article {
-        background-color: #5f1c07;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: justify;
-        padding: 20px;
-    }
-        article .separacao{
-            display: flex;
-            flex-direction: column;
-        }
-            .separacao .fen{
-                min-width: 45vw;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-                .fen #char-name{
-                    font-family: 'jujutsu';
-                    font-size: 30px;
-                    text-shadow: 3px 3px 3px black
-                    
-                }
-                .fen img{
-                    width: 200px;
-                    border-radius: 50%;
-                    margin-top: 20px;
-                    box-shadow: 
-                    5px 5px 5px rgba(0, 0, 0, 0.726), 
-                    -5px -5px 15px rgb(71, 3, 3);
-                }
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+header {
+  background-color: #06696b;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+@font-face {
+  font-family: "jujutsu";
+  src: url("Jujutsu Kaisen.ttf") format(truetype);
+  font-weight: normal;
+}
+header h1 {
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-family: "jujutsu";
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+}
+article {
+  background-color: #5f1c07;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px 20px 50px 20px;
+}
+article .separacao {
+  display: flex;
+  flex-direction: column;
+}
+.separacao .fen {
+  min-width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fen #char-name {
+  font-family: "jujutsu";
+  font-size: 30px;
+  text-shadow: 3px 3px 3px black;
+}
+.fen img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726), -5px -5px 15px rgb(71, 3, 3);
+}
 
-            .separacao .divDescription{
-                min-width: 55vw;
-                text-align: left;
-            }
-                .divDescription .description{
-                    font-size: 13px;
-                    padding: 10px;
-                    max-height: 600px;
-                    margin: 20px 0px;
-                    overflow: auto;
-                }
-                    .description li{
-                        list-style: circle;
-                        list-style-position: inside;
-                    }
-    article .charSelection{
-        justify-content: end;
-        text-align: start;
-        margin-top: 60px;
-    }
-        article #charsList{
-            font-family: Consolas;
-        }
-        
+.separacao .divDescription {
+  min-width: 55vw;
+  text-align: left;
+}
+.divDescription .description {
+  font-size: 13px;
+  padding: 10px;
+  margin: 20px 0px;
+  overflow: auto;
+}
+.description li {
+  list-style: circle;
+  list-style-position: inside;
+}
+article .charSelection {
+  text-align: start;
+  margin-top: 60px;
+}
+article #charsList {
+  font-family: Consolas;
+}
 
-    footer {
-        background-color: #053c3d;
-        color: white;
-        width: 100%;
-        height: 26px;
-        border-top:  3px solid black;
-        border-bottom:  3px solid black;
-        display: flex;
-        justify-content: center;
-    }
+footer {
+  background-color: #053c3d;
+  color: white;
+  width: 100%;
+  height: 26px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}

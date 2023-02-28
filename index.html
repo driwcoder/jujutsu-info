@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jujutsu Kaisen</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body onload="atualizarSelect()">
-
-    <header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="atualizarSelect()">
+    <div class="container">
+      <header>
         <h1>Jujutsu - Kaisen</h1>
-    </header>
+      </header>
 
-    <article id="mainSection">
-        
-            
+      <article id="mainSection">
         <div class="separacao">
+          <div class="fen">
+            <div id="char-name">Nome do personagem</div>
+            <img
+              src="imagens/Jujutsu-Kaisen.png"
+              alt="itadori"
+              id="charImage"
+            />
+          </div>
 
-            <div class="fen">
-                <div id="char-name">Nome do personagem</div>
-                <img src="imagens/Jujutsu-Kaisen.png" alt="itadori" id="charImage">
-            </div>
-
-            <div class="divDescription">
-                <p class="description"></p>
-                
-            </div>
-
+          <div class="divDescription">
+            <p class="description"></p>
+          </div>
         </div>
-        
+
         <div class="charSelection">
-            <label>Selecione o Personagem:</label>
-            <select id="charsList" onChange="atualizarSelect()">
-                <option value=""> Escolha um persongem </option>
-                <option value="Yuji-Itadori">Yuji Itadori</option>
-                <option value="Megumi-Fushiguro">Megumi Fushiguro</option>
-                <option value="Nobara-Kugisaki">Nobara Kugisaki</option>
-                <option value="Maki-Zen'in">Maki Zen'in</option>
-                <option value="Toge-Inumaki">Toge Inumaki</option>
-                <option value="Panda">Panda</option>
-                <option value="Kokichi-Muta">Kokichi Muta</option>
-                <option value="Aoi-Todo">Aoi Todo</option>
-                <option value="Noritoshi-Kamo">Noritoshi Kamo</option>
-            </select>
-         </div>
-        
+          <label>Selecione o Personagem:</label>
+          <select id="charsList" onChange="atualizarSelect()">
+            <option value="">Escolha um persongem</option>
+            <option value="Yuji-Itadori">Yuji Itadori</option>
+            <option value="Megumi-Fushiguro">Megumi Fushiguro</option>
+            <option value="Nobara-Kugisaki">Nobara Kugisaki</option>
+            <option value="Maki-Zen'in">Maki Zen'in</option>
+            <option value="Toge-Inumaki">Toge Inumaki</option>
+            <option value="Panda">Panda</option>
+            <option value="Kokichi-Muta">Kokichi Muta</option>
+            <option value="Aoi-Todo">Aoi Todo</option>
+            <option value="Noritoshi-Kamo">Noritoshi Kamo</option>
+          </select>
+        </div>
+      </article>
 
-    </article>
-
-    <footer>
-        Developed by @driwcoder
-    </footer>
-
+      <footer>Developed by @driwcoder</footer>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
