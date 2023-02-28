@@ -8,12 +8,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "Consolas";
+  font-family: 'Source Code Pro';
   background-color: #5f1c07;
 }
 .container {
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 header {
   background-color: #06696b;
@@ -38,7 +38,7 @@ header h1 {
   text-shadow: 5px 5px 5px black;
   color: white;
 }
-article {
+.mainSection {
   background-color: #5f1c07;
   color: white;
   display: flex;
@@ -90,7 +90,7 @@ article .charSelection {
   margin-top: 60px;
 }
 article #charsList {
-  font-family: Consolas;
+  font-family: 'Source Code Pro';
 }
 
 footer {
@@ -104,4 +104,32 @@ footer {
   justify-content: center;
   position: absolute;
   bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .separacao .fen {
+    min-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .fen #char-name {
+    font-family: "jujutsu";
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+  }
+  article .separacao {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0 30px px;
+  }
+  article .charSelection {
+    text-align: start;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
 }
